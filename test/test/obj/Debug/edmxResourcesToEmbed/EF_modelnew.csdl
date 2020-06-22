@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="lab17Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="производитель">
+    <Key>
+      <PropertyRef Name="ID_Prod" />
+    </Key>
+    <Property Name="ID_Prod" Type="Int32" Nullable="false" />
+    <Property Name="Name_Prod" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Data_creature" Type="DateTime" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="lab17Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="производитель" EntityType="Self.производитель" />
+  </EntityContainer>
+</Schema>
